@@ -1,0 +1,18 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": true,
+      "cwd": "/Users/lukasunguraitis/Documents/2 Areas/Fall 2021/CS 141/divvy/divvy",
+      "environment": [],
+      "program": "/Users/lukasunguraitis/Documents/2 Areas/Fall 2021/CS 141/divvy/divvy/build/Release/outRelease",
+      "internalConsoleOptions": "openOnSessionStart",
+      "MIMode": "gdb",
+      "externalConsole": true
+    }
+  ]
+}
