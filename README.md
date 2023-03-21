@@ -6,9 +6,11 @@ This C++ project analyzes Divvy bike ride data, providing insights into ride sta
 Table of Contents
 -----------------
 
-*   [Features](#features)
-*   [Getting Started](#getting-started)
-*   [Usage](#usage)
+- [Divvy Bike Ride Analyzer](#divvy-bike-ride-analyzer)
+  - [Table of Contents](#table-of-contents)
+  - [Features](#features)
+  - [Getting Started](#getting-started)
+  - [Usage](#usage)
 
 Features
 --------
@@ -30,12 +32,14 @@ bash
 git clone https://github.com/lumirth/divvy.git
 ```
 
+> ⚠️ **NOTE:** The `data/all_divvy_rides_september.csv` has been compressed due to its size. Be sure to extract the file before running the program.
+
 To compile the project, navigate to the project directory and run:
 
 bash
 
 ```bash
-g++ -o divvy_analyzer main.cpp
+g++ -o divvy_analyzer main.cpp --std=c++11
 ```
 
 Usage

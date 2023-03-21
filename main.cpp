@@ -77,21 +77,21 @@ int main(){
                 // choose different datafiles
                 switch (menuChoice) {
                     case 1:
-                        csvToVector(csv, "divvyridesampledata.csv");
+                        csvToVector(csv, "data/divvyridesampledata.csv");
                         csv.erase(csv.begin()); // erase first line, it's unneeded
                         cout << "        Total # of trips found in datafile:  " << csv.size() << endl;
                         cleanData(csv);
                         cout << "        Total # of trips in clean data:  " << csv.size() << endl;
                         break;
                     case 2:
-                        csvToVector(csv, "weekdayweekend.csv");
+                        csvToVector(csv, "data/weekdayweekend.csv");
                         csv.erase(csv.begin()); // erase first line, it's unneeded
                         cout << "        Total # of trips found in datafile:  " << csv.size() << endl;
                         cleanData(csv);
                         cout << "        Total # of trips in clean data:  " << csv.size() << endl;
                         break;
                     case 3:
-                        csvToVector(csv, "all_divvy_rides_september.csv");
+                        csvToVector(csv, "data/all_divvy_rides_september.csv");
                         csv.erase(csv.begin()); // erase first line, it's unneeded
                         cout << "        Total # of trips found in datafile:  " << csv.size() << endl;
                         cleanData(csv);
