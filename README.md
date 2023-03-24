@@ -32,8 +32,6 @@ bash
 git clone https://github.com/lumirth/divvy.git
 ```
 
-> ⚠️ **NOTE:** The `data/all_divvy_rides_september.csv` has been compressed due to its size. Be sure to extract the file before running the program.
-
 To compile the project, navigate to the project directory and run:
 
 bash

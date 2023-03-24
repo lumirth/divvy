@@ -40,6 +40,9 @@ int main(){
     int runCount = 0;           // used for number of times beginning message displayed
     bool dataRead = false;      // bool for if data has been read into vector
     vector<vector<string>> csv; // 2d vector for entire program
+    vector<vector<string>> csv1; // 2d vector for first half of data
+    vector<vector<string>> csv2; // 2d vector for second half of data
+
 
     while(true) {
         if (runCount++ == 0) { // let user know they need to read data first
@@ -91,8 +94,12 @@ int main(){
                         cout << "        Total # of trips in clean data:  " << csv.size() << endl;
                         break;
                     case 3:
-                        csvToVector(csv, "data/all_divvy_rides_september.csv");
-                        csv.erase(csv.begin()); // erase first line, it's unneeded
+                        csvToVector(csv1, "data/divvy_rides_september_p1.csv");
+                        csvToVector(csv2, "data/divvy_rides_september_p2.csv");
+                        csv1.erase(csv1.begin()); // erase first line, it's unneeded
+                        csv2.erase(csv2.begin()); // erase first line, it's unneeded
+                        csv.insert(csv.end(), csv1.begin(), csv1.end());
+                        csv.insert(csv.end(), csv2.begin(), csv2.end());
                         cout << "        Total # of trips found in datafile:  " << csv.size() << endl;
                         cleanData(csv);
                         cout << "        Total # of trips in clean data:  " << csv.size() << endl;
