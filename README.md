@@ -26,15 +26,11 @@ Getting Started
 
 Clone the repository to your local machine:
 
-bash
-
 ```bash
 git clone https://github.com/lumirth/divvy.git
 ```
 
 To compile the project, navigate to the project directory and run:
-
-bash
 
 ```bash
 g++ -o divvy_analyzer main.cpp --std=c++11
@@ -44,8 +40,6 @@ Usage
 -----
 
 Execute the compiled binary:
-
-bash
 
 ```bash
 ./divvy_analyzer
